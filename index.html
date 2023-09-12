@@ -37,7 +37,7 @@
 <header>
  <section class="container mx-auto">
      <!-- Navbar Start -->
-    <div class="navbar md:bg-[#F85559] flex items-center md:justify-between md:px-12 md:py-6 text-white md:rounded-full">
+    <div class="navbar md:bg-[#F85559] flex items-center md:justify-between md:px-12 md:py-6 text-white md:rounded-full mt-4">
         <div class="md:navbar-start hidden md:inline-flex">
             <ul class="menu menu-horizontal flex items-center px-1 text-lg">
                 <li><a href="#home">Home</a></li>
@@ -60,7 +60,19 @@
         <!-- mobile toggle menu -->
         <div class="md:hidden navbar-end text-white">
             <div class="dropdown dropdown-end">
-                <label tabindex="0" class="btn m-1"><img src="images/bars-solid.svg" alt=""></label>
+                <!-- <label tabindex="0" class="btn m-1"><img src="images/bars-solid.svg" alt=""></label> -->
+                <label class="btn btn-circle swap swap-rotate">
+  
+                    <!-- this hidden checkbox controls the state -->
+                    <input type="checkbox" />
+                    
+                    <!-- hamburger icon -->
+                    <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+                    
+                    <!-- close icon -->
+                    <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+                    
+                  </label>
                 <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                  <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -82,7 +94,7 @@
                       <div class="max-w-md">
                         <h1 class="mb-5 text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                         <p class="mb-5 text-white">We supply highly quality organic products</p>
-                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-primary bg-[#f85559] border-none hover:bg-[#ff8587]">Get Started</button>
                       </div>
                     </div>
                   </div>
@@ -100,7 +112,7 @@
                       <div class="max-w-md">
                         <h1 class="mb-5 text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                         <p class="mb-5 text-white">We supply highly quality organic products</p>
-                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-primary bg-[#f85559] border-none hover:bg-[#ff8587]">Get Started</button>
                       </div>
                     </div>
                   </div>
@@ -119,7 +131,7 @@
                       <div class="max-w-md">
                         <h1 class="mb-5 text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                         <p class="mb-5 text-white">We supply highly quality organic products</p>
-                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-primary bg-[#f85559] border-none hover:bg-[#ff8587]">Get Started</button>
                       </div>
                     </div>
                   </div>
@@ -138,7 +150,7 @@
                       <div class="max-w-md">
                         <h1 class="mb-5 text-5xl font-bold text-white">Exotic tastes at your doorstep</h1>
                         <p class="mb-5 text-white">We supply highly quality organic products</p>
-                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-primary bg-[#f85559] border-none hover:bg-[#ff8587]">Get Started</button>
                       </div>
                     </div>
                   </div>
@@ -156,7 +168,67 @@
 
  <!-- main Area Start -->
  <main>
+    <!-- Fruit Line Area Starts -->
+    <section class="container w-9/12 mx-auto glass md:flex rounded-lg justify-between items-center -mt-24 shadow-lg hidden p-4">
+           <div class="text-center">
+            <img src="images/fruit1.png" alt="">
+            <p>Grape</p>
+           </div>
+              <div class="text-center"><img src="images/fruit2.png" alt="">
+                <p>Orange</p></div>  
+                <div class="text-center"><img src="images/fruit3.png" alt="">
+                    <p>Mango</p></div>
+               <div class="text-center"><img src="images/fruit4.png" alt="">
+                <p>Strawberry</p></div> 
+               <div class="text-center"><img src="images/fruit5.png" alt="">
+                <p>Mango</p></div>   
+    </section>
+    <!-- Fruit Line Area Ends -->
 
+    <!-- Deal Araa Starts -->
+    <section class="container flex-col-reverse p-4 mx-auto">
+        <div class="grid md:grid-cols-2 grid-cols-1 mt-12 justify-between">
+            <div class="text-center md:text-start">
+                <h2  class="mb-5 text-5xl font-bold text-white">Deal of the day</h2>
+                <p class="mb-5 text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="stats shadow text-center grid md:grid-cols-4 grid-cols-2 grid-rows-2 md:grid-rows-1 ">
+                    <div class="stat">
+                      <div class="stat-value text-[#F85559]">25</div> 
+                      <div class="stat-title">Days</div>
+                    </div>
+                    <div class="stat">
+                      <div class="stat-value text-[#F85559]">4</div> 
+                      <div class="stat-title">Hours</div>
+                    </div>
+                    <div class="stat">
+                      <div class="stat-value text-[#F85559]">20</div> 
+                      <div class="stat-title">Minutes</div>
+                    </div>
+                    <div class="stat">
+                      <div class="stat-value text-[#F85559]">56</div> 
+                      <div class="stat-title">Seconds</div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- deal cards -->
+        <div class="container grid md:grid-cols-1 md:grid-rows-1 grid-cols-2 grid-rows-2">
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Deal Area Ends -->
  </main>
 <!-- main Area Ends -->
  <!-- Footer Area Starts -->
